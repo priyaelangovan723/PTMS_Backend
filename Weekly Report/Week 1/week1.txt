@@ -1,0 +1,10 @@
+Objectives
+	1.Automate workflows to minimize manual intervention, streamline processes and reduce repetitive task errors.
+	
+	2.Optimize record retrieval for faster access to training-related information.
+
+	3.Provide visibility into past and ongoing training processes for continuity.
+
+	4.Ensure secure access with authentication and role based controls for proper usage.
+
+	5.Enable automated email notifications, customizable and department specific reports.
