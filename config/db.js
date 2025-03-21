@@ -7,7 +7,7 @@ const pool = mysql.createPool({
   database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
   ssl:{
-    ca:fs.readFileSync(process.env.CA)
+    ca:fs.readFileSync('isrgrootx1.pem')
   },
   // connectionLimit:50
 });
