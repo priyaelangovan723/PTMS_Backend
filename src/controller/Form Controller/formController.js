@@ -3,12 +3,13 @@ const ResponseModel = require('../../../models/ResponseModel');
 const {forms1} = require('../../../services/Google API Services/googleService');
 const { google } = require("googleapis");
 const auth = new google.auth.GoogleAuth({
-  keyFile: "authentication-377904-fe5355a83891.json",
+  credentials: JSON.parse(process.env.GCP_SERVICE_ACCOUNT_KEY), // Load from environment variable
   scopes: [
     "https://www.googleapis.com/auth/forms.body",
     "https://www.googleapis.com/auth/drive.file",
   ],
 });
+
 
 exports.createForm = async (trainingDetails) => {
     try {
